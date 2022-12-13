@@ -3,9 +3,16 @@ import numpy as np
 import random
 import time
 
+
+SCREEN_WIDTH= 1000
+SCREEN_HEIGHT = 1000
+
 wn=turtle.Screen()
 wn.title("cookie with probability")
 wn.bgcolor("black")
+wn.setup(SCREEN_WIDTH,SCREEN_HEIGHT)
+
+
 
 wn.register_shape("C:\\Users\\User\\Desktop\\cookie.gif")
 
@@ -67,14 +74,12 @@ while True:
     
      turtle.write("GAME OVER",align="center", font = ("Courier New",70,"normal"))
      exit()
-    if clicks = 80:
-      start_time = time.time()-elapsed_time + 1   
     if clicks >= 100:
      turtle.write("WELL PLAYED",align="center", font = ("Courier New",70,"normal")) 
      exit()
     else:
      start_time= time.time()-elapsed_time
-     wn.update()
+    wn.update()
 
 
 
